@@ -38,6 +38,7 @@ public final class Fetcher {
                         .followRedirects(false)
                         .ignoreHttpErrors(true)
                         .ignoreContentType(true)
+                        .validateTLSCertificates(false)
                         .userAgent("ConcurrentWebCrawler/1.0")
                         .execute();
             } catch (IOException ioe) {
